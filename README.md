@@ -11,6 +11,12 @@ Qino CMS combines direct inline editing with a compact, modular architecture. Co
 - TypeScript, ESM, and Web-standard APIs
 - Powered by the lightweight [Qino application core](https://github.com/qinojs/qino)
 
+## Try the editor in your browser
+
+[Open the interactive Qino CMS demo](https://schwups.ch/qino#ausprobieren). The demo page is in German. You can edit sample content directly on the page and reset it without creating an account.
+
+Qino CMS is developed by [schwups GmbH](https://schwups.ch/).
+
 ## Quick start
 
 Clone Qino and enter the repository:
