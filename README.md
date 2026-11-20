@@ -15,7 +15,7 @@ Qino CMS combines direct inline editing with a compact, modular architecture. Co
 
 [Qino CMS product information](https://schwups.ch/qino) is available in German.
 
-Qino CMS is developed by [schwups GmbH](https://schwups.ch/).
+Qino CMS is developed by [schwups GmbH](https://schwups.ch/). The CMS ships with the Qino framework as the `/cms` subpath of [`qinojs` on npm](https://www.npmjs.com/package/qinojs) and [`@qino/qino` on JSR](https://jsr.io/@qino/qino).
 
 ## Quick start
 
