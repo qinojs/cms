@@ -1,6 +1,6 @@
 # Qino CMS
 
-**A modern, Deno-native CMS for editing websites where they live.**
+**A TypeScript CMS for editing websites in place.**
 
 Qino CMS combines direct inline editing with a compact, modular architecture. Content editors get a natural editing experience, while developers keep full control over layouts, content types, permissions, and integrations.
 
@@ -19,40 +19,9 @@ Qino CMS is developed by [schwups GmbH](https://schwups.ch/). The CMS ships with
 
 ## Quick start
 
-Clone Qino and enter the repository:
+Use [the Qino CMS starter](https://github.com/qinojs/qino/tree/main/module/starter.cms#getting-started) to create a working site in an empty project directory. The CMS runs from the main Qino repository. Start with the Bun setup in that guide.
 
-```sh
-git clone https://github.com/qinojs/qino.git
-cd qino
-```
-
-Create a `server.ts`:
-
-```ts
-import { App } from "./module/core/mod.ts";
-
-const app = new App({
-  db: `sqlite:${import.meta.dirname}/site.sqlite`,
-  dev: true,
-});
-
-app.stores
-  .add(new URL("./module/store.json", import.meta.url))
-  .add("cms")
-  .add("cms.installation.default");
-
-await app.init();
-
-Deno.serve({ port: 8000 }, app.fetch);
-```
-
-Start the site:
-
-```sh
-deno run -A server.ts
-```
-
-Open [http://localhost:8000](http://localhost:8000). On the first start, Qino creates the CMS structure and prints the generated superuser credentials in the terminal.
+Once the server is running, open [http://localhost:8080/](http://localhost:8080/) for the sample site or [http://localhost:8080/login](http://localhost:8080/login) for the editor sign-in. On the first run, the starter creates a local superuser. Follow the starter guide to sign in and switch on editing.
 
 ## Repository status
 
